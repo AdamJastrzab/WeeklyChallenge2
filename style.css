@@ -152,9 +152,10 @@
     margin-bottom: 30px;
 }
 
-.img-pomidory {
+.img-pomidory, .middle {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
     
 
@@ -208,11 +209,10 @@
     font-size: 50px;
 }
 
-
-
 .gallery {
     background-color: rgb(255,233,47);
     height: 100%;
+    padding-bottom: 30px;
 }
 
 .gallery-headline {
@@ -221,7 +221,6 @@
     text-align: center;
     font-size: 55px;
     font-weight: 900;
-
 }
 
 .gallery-paragraph {
@@ -263,7 +262,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     border: none;
 }
 
@@ -273,7 +271,7 @@
     background-repeat: no-repeat;
     background-position: 60% 50%;
     height: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 30px;
 }
 
 
@@ -308,6 +306,7 @@
 .blog {
     background-color: rgb(176,124,247);
     height: 100%;
+    padding-bottom: 30px;
 }
 
 .blog-headline, .blog-paragraph {
@@ -333,7 +332,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-top: 15px;
     border: none;
 }
@@ -371,7 +369,6 @@
     border: none 2px black;
     border-radius: 10px;
 }
-
 
 
 .blog-text {
@@ -447,14 +444,14 @@
 }
 
 .contact-input:-ms-input-placeholder, .contact-textarea:-ms-input-placeholder { /* IE 10+ */
-    color: red;
+    color: white;
   }
 .contact-input::-moz-placeholder, .contact-textarea::-moz-placeholder { /* Firefox 19+ */
-    color: red;
+    color: white;
     opacity: 1;
   }
 .contact-input:-moz-placeholder, .contact-textarea:-moz-placeholder { /* Firefox 4 - 18 */
-    color: red;
+    color: white;
     opacity: 1;
   }
 
@@ -626,6 +623,10 @@
     .services-container {
     display: flex;
     flex-direction: column-reverse;
+    }
+
+    .srodek {
+
     }
 
     .obrazek-jagody, .obrazek-jarzyny {
