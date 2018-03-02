@@ -41,7 +41,7 @@
 
 .fresh-life {
     height: 100vh;
-    background-image: url("images/tlo-malina.gif");
+    background-image: url("../images/tlo-malina.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -152,9 +152,10 @@
     margin-bottom: 30px;
 }
 
-.img-pomidory {
+.img-pomidory, .middle {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
     
 
@@ -173,14 +174,12 @@
     width: 450px;
     background: white;
     box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.5);
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s;
 }
 
 
 .lista-li:hover {
-    width: 470px;
     cursor: pointer;
+    width: 455px;
 }
 
 .lista-link {
@@ -208,11 +207,10 @@
     font-size: 50px;
 }
 
-
-
 .gallery {
     background-color: rgb(255,233,47);
     height: 100%;
+    padding-bottom: 30px;
 }
 
 .gallery-headline {
@@ -221,7 +219,6 @@
     text-align: center;
     font-size: 55px;
     font-weight: 900;
-
 }
 
 .gallery-paragraph {
@@ -263,17 +260,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     border: none;
 }
 
 
 .subscribe-to-us {
-    background-image: url("images/tlo-jagody.gif");
+    background-image: url("../images/tlo-jagody.gif");
     background-repeat: no-repeat;
     background-position: 60% 50%;
     height: 100%;
-    padding-bottom: 3%;
+    padding-bottom: 30px;
 }
 
 
@@ -308,6 +304,7 @@
 .blog {
     background-color: rgb(176,124,247);
     height: 100%;
+    padding-bottom: 30px;
 }
 
 .blog-headline, .blog-paragraph {
@@ -333,7 +330,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-top: 15px;
     border: none;
 }
@@ -373,7 +369,6 @@
 }
 
 
-
 .blog-text {
     position: absolute;
     margin-top: 52%;
@@ -400,7 +395,7 @@
 
 
 .contact {
-    background-image:url("images/tlo-niebo.jpg");
+    background-image:url("../images/tlo-niebo.jpg");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -447,14 +442,14 @@
 }
 
 .contact-input:-ms-input-placeholder, .contact-textarea:-ms-input-placeholder { /* IE 10+ */
-    color: red;
+    color: white;
   }
 .contact-input::-moz-placeholder, .contact-textarea::-moz-placeholder { /* Firefox 19+ */
-    color: red;
+    color: white;
     opacity: 1;
   }
 .contact-input:-moz-placeholder, .contact-textarea:-moz-placeholder { /* Firefox 4 - 18 */
-    color: red;
+    color: white;
     opacity: 1;
   }
 
@@ -532,32 +527,38 @@
 
 @media (min-width: 1200px) {
     .blog-text {
-        margin-top: 72%;
+       margin-top: 255px;
     }
 } 
 
 @media (min-width: 992px) {
-    .blog-text {
-        margin-top: 62%;
-    }
-
     .maliny-img {
         max-width: 80%;
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    
+    }   
 } 
+
+
+@media (max-width: 1200px) {
+    .blog-text {
+        margin-top: 185px;
+     }
+}
 
 @media (max-width: 992px) {
     .lista-li  {
         width: 340px;
       }
-  
+
       .lista-li:hover  {
-          width: 355px;
-        }
+        width: 345px;
+      }
+
+      .blog-text {
+        margin-top: 115px;
+     }
+  
 }
 
 @media (max-width: 768px) {
@@ -605,13 +606,12 @@
     }
 
     .lista-li  {
-      height: 70px;
-      width: 380px;
+        height: 70px;
+        width: 380px;
     }
 
     .lista-li:hover  {
-        height: 70px;
-        width: 400px;
+        width: 385px;
       }
 
     .maliny-img {
@@ -651,6 +651,10 @@
         margin-bottom: 22px;
     }
 
+    .blog-text {
+        margin-top: 270px;
+     }
+
   }
 
   @media (max-width: 495px) {
@@ -677,47 +681,84 @@
         margin-bottom: 30px;
     }
 
-    .blog-text {
-        margin-top: 60%;  
-      }
+    .contact-input, .contact-textarea {
+    width: 270px;
+    }
 
-      .contact-input, .contact-textarea {
-        width: 270px;
-      }
+    .details-data {
+        font-size: 90%;
+    }
+    
+    .p-our-services {
+        font-size: 60px;
+    }
 
-      .details-data {
-          font-size: 90%;
-      }
-       
-      .p-our-services {
-          font-size: 60px;
-      }
+    .lista-li  {
+    width: 340px;
+    }
 
-      .lista-li  {
-        width: 340px;
-      }
+    .lista-li:hover  {
+    width: 345px;
+    }
   
-      .lista-li:hover  {
-          width: 360px;
-        }
 }
+
+@media (max-width: 410px) {
+      .blog-text {
+        margin-top: 260px;;
+     }
 
 @media (max-width: 400px) {
     .lista-li  {
         width: 280px;
       }
-  
+
       .lista-li:hover  {
-          width: 295px;
-        }
+        width: 285px;
+      }
+
+      .blog-text {
+        margin-top: 255px;
+     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 390px) {
+      .blog-text {
+        margin-top: 245px;
+     }
+}
+
+
+@media (max-width: 375px) {
+    .blog-text {
+      margin-top: 230px;
+   }
+}
+
+@media (max-width: 358px) {
+    .blog-text {
+      margin-top: 190px;
+   }
+}
+
+
+
+@media (max-width: 342px) {
     .lista-li  {
         width: 230px;
       }
   
       .lista-li:hover  {
-          width: 245px;
+          width: 235px;
         }
+
+        .blog-text {
+            margin-top: 175px;
+         }
+}
+
+@media (max-width: 325px) {
+    .blog-text {
+      margin-top: 155px;
+   }
 }
