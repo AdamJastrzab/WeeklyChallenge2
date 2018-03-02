@@ -41,7 +41,7 @@
 
 .fresh-life {
     height: 100vh;
-    background-image: url("images/tlo-malina.gif");
+    background-image: url("../images/tlo-malina.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
@@ -174,14 +174,12 @@
     width: 450px;
     background: white;
     box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.5);
-    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s;
 }
 
 
 .lista-li:hover {
-    width: 470px;
     cursor: pointer;
+    width: 455px;
 }
 
 .lista-link {
@@ -267,7 +265,7 @@
 
 
 .subscribe-to-us {
-    background-image: url("images/tlo-jagody.gif");
+    background-image: url("../images/tlo-jagody.gif");
     background-repeat: no-repeat;
     background-position: 60% 50%;
     height: 100%;
@@ -397,7 +395,7 @@
 
 
 .contact {
-    background-image:url("images/tlo-niebo.jpg");
+    background-image:url("../images/tlo-niebo.jpg");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -529,32 +527,38 @@
 
 @media (min-width: 1200px) {
     .blog-text {
-        margin-top: 72%;
+       margin-top: 255px;
     }
 } 
 
 @media (min-width: 992px) {
-    .blog-text {
-        margin-top: 62%;
-    }
-
     .maliny-img {
         max-width: 80%;
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    
+    }   
 } 
+
+
+@media (max-width: 1200px) {
+    .blog-text {
+        margin-top: 185px;
+     }
+}
 
 @media (max-width: 992px) {
     .lista-li  {
         width: 340px;
       }
-  
+
       .lista-li:hover  {
-          width: 355px;
-        }
+        width: 345px;
+      }
+
+      .blog-text {
+        margin-top: 115px;
+     }
+  
 }
 
 @media (max-width: 768px) {
@@ -602,13 +606,12 @@
     }
 
     .lista-li  {
-      height: 70px;
-      width: 380px;
+        height: 70px;
+        width: 380px;
     }
 
     .lista-li:hover  {
-        height: 70px;
-        width: 400px;
+        width: 385px;
       }
 
     .maliny-img {
@@ -623,10 +626,6 @@
     .services-container {
     display: flex;
     flex-direction: column-reverse;
-    }
-
-    .srodek {
-
     }
 
     .obrazek-jagody, .obrazek-jarzyny {
@@ -651,6 +650,10 @@
     .contact-details {
         margin-bottom: 22px;
     }
+
+    .blog-text {
+        margin-top: 270px;
+     }
 
   }
 
@@ -678,47 +681,84 @@
         margin-bottom: 30px;
     }
 
-    .blog-text {
-        margin-top: 60%;  
-      }
+    .contact-input, .contact-textarea {
+    width: 270px;
+    }
 
-      .contact-input, .contact-textarea {
-        width: 270px;
-      }
+    .details-data {
+        font-size: 90%;
+    }
+    
+    .p-our-services {
+        font-size: 60px;
+    }
 
-      .details-data {
-          font-size: 90%;
-      }
-       
-      .p-our-services {
-          font-size: 60px;
-      }
+    .lista-li  {
+    width: 340px;
+    }
 
-      .lista-li  {
-        width: 340px;
-      }
+    .lista-li:hover  {
+    width: 345px;
+    }
   
-      .lista-li:hover  {
-          width: 360px;
-        }
 }
+
+@media (max-width: 410px) {
+      .blog-text {
+        margin-top: 260px;;
+     }
 
 @media (max-width: 400px) {
     .lista-li  {
         width: 280px;
       }
-  
+
       .lista-li:hover  {
-          width: 295px;
-        }
+        width: 285px;
+      }
+
+      .blog-text {
+        margin-top: 255px;
+     }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 390px) {
+      .blog-text {
+        margin-top: 245px;
+     }
+}
+
+
+@media (max-width: 375px) {
+    .blog-text {
+      margin-top: 230px;
+   }
+}
+
+@media (max-width: 358px) {
+    .blog-text {
+      margin-top: 190px;
+   }
+}
+
+
+
+@media (max-width: 342px) {
     .lista-li  {
         width: 230px;
       }
   
       .lista-li:hover  {
-          width: 245px;
+          width: 235px;
         }
+
+        .blog-text {
+            margin-top: 175px;
+         }
+}
+
+@media (max-width: 325px) {
+    .blog-text {
+      margin-top: 155px;
+   }
 }
